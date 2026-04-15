@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua TV Online - O Melhor do Entretenimento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+        }
+        .glow-button:hover {
+            box-shadow: 0 0 25px rgba(34, 197, 94, 0.6);
+            transform: scale(1.05);
+        }
+        .bg-gradient-dark {
+            background: radial-gradient(circle at top, #1a1a2e 0%, #0f0f0f 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-dark text-white min-h-screen">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-black tracking-tighter italic">SUA<span class="text-green-500">LOGO</span></div>
+        <a href="#planos" class="bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-6 rounded-full text-sm uppercase">Teste Grátis</a>
+    </nav>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+            LIBERTE O MELHOR DO <br>
+            <span class="text-green-500">ENTRETENIMENTO 4K</span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+            Canais abertos e fechados, filmes e séries atualizados diariamente. 
+            Sem antenas, sem cabos e sem fidelidade.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="https://wa.me/SEUNUMERO" class="glow-button bg-green-500 text-black font-extrabold py-4 px-10 rounded-xl text-lg uppercase">
+                Quero Testar Agora
+            </a>
+        </div>
+    </section>
+
+    <section class="bg-white/5 py-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition duration-500">
+            <span class="font-bold">SMART TV</span>
+            <span class="font-bold">ANDROID</span>
+            <span class="font-bold">TV BOX</span>
+            <span class="font-bold">IPHONE</span>
+            <span class="font-bold">PC</span>
+        </div>
+    </section>
+
+    <section id="planos" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Escolha seu Plano</h2>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            
+            <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-green-500 transition cursor-pointer">
+                <h3 class="text-xl font-bold mb-4">MENSAL</h3>
+                <div class="text-4xl font-black mb-6 text-green-500">R$ 35,00</div>
+                <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                    <li>✓ +60 mil Conteúdos</li>
+                    <li>✓ Canais 4K / Full HD</li>
+                    <li>✓ Sem Fidelidade</li>
+                    <li>✓ Suporte 24h</li>
+                </ul>
+                <a href="https://wa.me/SEUNUMERO?text=PlanoMensal" class="block bg-white text-black font-bold py-3 rounded-xl hover:bg-green-500 transition">Assinar Agora</a>
+            </div>
+
+            <div class="bg-white/5 border-2 border-green-500 p-8 rounded-3xl relative scale-105 shadow-2xl">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-500 text-black text-xs font-black px-4 py-1 rounded-full uppercase">Mais Vendido</span>
+                <h3 class="text-xl font-bold mb-4">TRIMESTRAL</h3>
+                <div class="text-4xl font-black mb-6 text-green-500">R$ 90,00</div>
+                <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                    <li>✓ Desconto Exclusivo</li>
+                    <li>✓ Todos os Benefícios</li>
+                    <li>✓ Acesso Imediato</li>
+                    <li>✓ Sem Travamentos</li>
+                </ul>
+                <a href="https://wa.me/SEUNUMERO?text=PlanoTrimestral" class="block bg-green-500 text-black font-bold py-3 rounded-xl">Assinar Agora</a>
+            </div>
+
+            <div class="bg-white/5 border border-white/10 p-8 rounded-3xl hover:border-green-500 transition cursor-pointer">
+                <h3 class="text-xl font-bold mb-4">ANUAL</h3>
+                <div class="text-4xl font-black mb-6 text-green-500">R$ 300,00</div>
+                <ul class="text-gray-400 space-y-3 mb-8 text-sm">
+                    <li>✓ Economia Máxima</li>
+                    <li>✓ 12 Meses de Acesso</li>
+                    <li>✓ Brinde Exclusivo</li>
+                    <li>✓ VIP Master</li>
+                </ul>
+                <a href="https://wa.me/SEUNUMERO?text=PlanoAnual" class="block bg-white text-black font-bold py-3 rounded-xl hover:bg-green-500 transition">Assinar Agora</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="p-10 border-t border-white/10 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Todos os direitos reservados. Sua Marca IPTV.</p>
+    </footer>
+
+</body>
+</html>

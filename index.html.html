@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hiper TV — Sua TV do jeito que você merece</title>
+<meta name="description" content="Hiper TV: +10.000 canais ao vivo, filmes e séries em HD, Full HD e 4K. Teste grátis, suporte rápido, planos a partir de R$ 30/mês." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: { sans: ['Verdana','Geneva','Tahoma','sans-serif'] },
+        colors: {
+          brand:       '#6B21A8',
+          'brand-2':   '#C026D3',
+          highlight:   '#F5C518',
+          success:     '#16A34A',
+          ink:         '#1B0F2A',
+          muted:       '#F5F3F8',
+          'muted-fg':  '#6B6781',
+          border:      '#ECE6F2',
+        },
+        boxShadow: {
+          soft: '0 4px 20px rgba(80,20,120,0.06)',
+          strong: '0 18px 50px rgba(80,20,120,0.18)',
+        },
+        backgroundImage: {
+          'gradient-primary': 'linear-gradient(135deg,#6B21A8,#C026D3)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html{scroll-behavior:smooth}
+  body{font-family:Verdana,Geneva,Tahoma,sans-serif;color:#1B0F2A;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .text-gradient{background:linear-gradient(135deg,#6B21A8,#C026D3);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .gradient-primary{background:linear-gradient(135deg,#6B21A8,#C026D3)}
+  details>summary{list-style:none;cursor:pointer}
+  details>summary::-webkit-details-marker{display:none}
+  details[open] .ico-plus{display:none}
+  details:not([open]) .ico-minus{display:none}
+</style>
+</head>
+<body class="bg-white text-ink">
+
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-border">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-2">
+      <img src="https://storage.googleapis.com/gpt-engineer-file-uploads/pll1X81MfeTp8VivKQmVElY0Kc43/social-images/social-1780430606208-Logomarcas3dSem_fundo_-_POP.webp" alt="Hiper TV" class="w-10 h-10 object-contain drop-shadow"/>
+      <span class="text-xl font-bold tracking-tight">Hiper<span class="text-gradient">TV</span></span>
+    </a>
+    <ul class="hidden md:flex items-center gap-8 text-sm font-semibold text-muted-fg">
+      <li><a href="#inicio" class="hover:text-brand">Início</a></li>
+      <li><a href="#sobre" class="hover:text-brand">Diferenciais</a></li>
+      <li><a href="#planos" class="hover:text-brand">Planos</a></li>
+      <li><a href="#depoimentos" class="hover:text-brand">Depoimentos</a></li>
+      <li><a href="#duvidas" class="hover:text-brand">Dúvidas</a></li>
+    </ul>
+    <a href="https://wa.me/5585920057750?text=Gostaria%20de%20conhecer%20e%20fazer%20um%20teste!" target="_blank" rel="noopener" class="gradient-primary text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-soft hover:shadow-strong hover:-translate-y-0.5 transition-all">Teste Grátis</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="pt-32 pb-20 px-6">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted text-brand text-xs font-bold uppercase tracking-wider mb-6">⚡ Streaming IPTV Premium</span>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-6">Tudo o que você precisa, <span class="text-gradient">em um só lugar.</span></h1>
+      <p class="text-lg text-muted-fg mb-8 max-w-xl">Canais ao vivo, filmes, séries e muito mais. Sem complicação, sem burocracia. Acesse de qualquer dispositivo, quando e onde quiser.</p>
+      <div class="flex flex-wrap gap-4 mb-8">
+        <a href="https://wa.me/5585920057750?text=Gostaria%20de%20conhecer%20e%20fazer%20um%20teste!" target="_blank" rel="noopener" class="gradient-primary text-white px-7 py-4 rounded-full font-bold shadow-strong hover:-translate-y-0.5 transition-all">Quero Testar Grátis</a>
+        <a href="#planos" class="px-7 py-4 rounded-full font-bold border-2 border-ink/10 hover:border-brand hover:text-brand transition-all">Ver Planos</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex -space-x-2">
+          <div class="w-9 h-9 rounded-full border-2 border-white gradient-primary" style="opacity:.55"></div>
+          <div class="w-9 h-9 rounded-full border-2 border-white gradient-primary" style="opacity:.7"></div>
+          <div class="w-9 h-9 rounded-full border-2 border-white gradient-primary" style="opacity:.85"></div>
+          <div class="w-9 h-9 rounded-full border-2 border-white gradient-primary"></div>
+        </div>
+        <div class="text-sm">
+          <div class="text-highlight">★★★★★</div>
+          <span class="text-muted-fg font-semibold">+5.000 clientes satisfeitos</span>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="absolute -inset-8 gradient-primary opacity-20 blur-3xl rounded-full"></div>
+      <div class="relative bg-white rounded-3xl shadow-strong border border-border p-8">
+        <div class="aspect-video rounded-2xl gradient-primary flex items-center justify-center mb-6 relative overflow-hidden">
+          <svg class="w-24 h-24 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm-2 14.5v-9l7 4.5-7 4.5z"/></svg>
+          <div class="absolute inset-0" style="background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.25),transparent 60%)"></div>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="text-center p-3 bg-muted rounded-xl"><div class="text-2xl font-extrabold text-gradient">10K+</div><div class="text-xs text-muted-fg font-semibold">Canais</div></div>
+          <div class="text-center p-3 bg-muted rounded-xl"><div class="text-2xl font-extrabold text-gradient">4K</div><div class="text-xs text-muted-fg font-semibold">Qualidade</div></div>
+          <div class="text-center p-3 bg-muted rounded-xl"><div class="text-2xl font-extrabold text-gradient">100%</div><div class="text-xs text-muted-fg font-semibold">Suporte Especializado</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="sobre" class="py-20 px-6 bg-muted/40">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-2">Nossos Diferenciais</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mt-3 mb-4">Por que escolher o <span class="text-gradient">Hiper TV?</span></h2>
+      <p class="text-muted-fg">Pensamos em tudo para que você tenha a melhor experiência, do começo ao fim.</p>
+    </div>
+    <div id="features" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section id="planos" class="py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-2">Planos &amp; Preços</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mt-3 mb-4">Conheça nossos <span class="text-gradient">planos</span></h2>
+      <p class="text-muted-fg">Escolha o plano ideal para você. Quanto maior o período, maior a economia.</p>
+    </div>
+    <div id="plans" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </div>
+</section>
+
+<!-- DISPOSITIVOS -->
+<section class="py-20 px-6 bg-muted/40">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-2">Compatibilidade</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mt-3 mb-4">Assista em seus <span class="text-gradient">dispositivos favoritos</span></h2>
+      <p class="text-muted-fg">Compatível com tudo que você já tem em casa.</p>
+    </div>
+    <div id="devices" class="flex flex-wrap justify-center gap-3"></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos" class="py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-2">Depoimentos</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mt-3 mb-4">Quem assina, <span class="text-gradient">recomenda</span></h2>
+      <p class="text-muted-fg">Veja o que nossos clientes têm a dizer sobre a experiência.</p>
+    </div>
+    <div id="testimonials" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- QUEM SOMOS -->
+<section class="py-20 px-6 bg-muted/40">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-2">Sobre Nós</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mt-3 mb-5">Quem <span class="text-gradient">somos</span></h2>
+      <p class="text-muted-fg mb-6 leading-relaxed">No Hiper TV, diversão a qualquer hora e lugar. Somos referência em seriedade e comprometimento com nossos clientes. Você faz parte da nossa família e só queremos o melhor para você.</p>
+      <ul class="space-y-3 mb-8" id="commitments"></ul>
+      <a href="https://wa.me/5585920057750?text=Gostaria%20de%20conhecer%20e%20fazer%20um%20teste!" target="_blank" rel="noopener" class="inline-block gradient-primary text-white px-7 py-4 rounded-full font-bold shadow-strong hover:-translate-y-0.5 transition-all">Fale Conosco</a>
+    </div>
+    <div id="badges" class="grid grid-cols-2 gap-4"></div>
+  </div>
+</section>
+
+<!-- REVENDA -->
+<section class="py-20 px-6">
+  <div class="max-w-5xl mx-auto gradient-primary rounded-3xl p-12 md:p-16 text-center text-white shadow-strong relative overflow-hidden">
+    <div class="absolute inset-0" style="background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.15),transparent 50%)"></div>
+    <div class="relative">
+      <span class="inline-block bg-highlight text-ink text-xs font-extrabold px-4 py-1.5 rounded-full mb-5 uppercase tracking-wider">Oportunidade de Negócio</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-5">Revenda IPTV e comece a <span class="text-highlight">lucrar agora!</span></h2>
+      <p class="text-white/90 max-w-2xl mx-auto mb-8">Tenha sua renda com a revenda de IPTV e conquiste espaço no mercado digital. Ofereça aos seus clientes um serviço estável, rápido e seguro.</p>
+      <a href="https://wa.me/5585920057750?text=Gostaria%20de%20saber%20sobre%20a%20revenda!" target="_blank" rel="noopener" class="inline-block bg-white text-brand px-8 py-4 rounded-full font-extrabold shadow-strong hover:bg-highlight hover:text-ink transition-all">Quero Ser Revendedor</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="duvidas" class="py-20 px-6 bg-muted/40">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-xs font-bold uppercase tracking-widest text-brand-2">FAQ</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold mt-3 mb-4">Dúvidas <span class="text-gradient">frequentes</span></h2>
+      <p class="text-muted-fg">Se tiver alguma pergunta que não esteja aqui, é só chamar no WhatsApp.</p>
+    </div>
+    <div id="faqs" class="space-y-3"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-white/80 py-10 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+    <div class="flex items-center gap-2">
+      <img src="https://storage.googleapis.com/gpt-engineer-file-uploads/pll1X81MfeTp8VivKQmVElY0Kc43/social-images/social-1780430606208-Logomarcas3dSem_fundo_-_POP.webp" alt="Hiper TV" class="w-8 h-8 object-contain"/>
+      <span class="font-bold text-white">Hiper TV</span>
+      <span class="text-white/60">© 2025 — Todos os direitos reservados</span>
+    </div>
+    <a href="https://wa.me/5585920057750" target="_blank" rel="noopener" class="flex items-center gap-2 font-semibold text-white hover:text-highlight transition">💬 Atendimento via WhatsApp</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/5585920057750?text=Gostaria%20de%20conhecer%20e%20fazer%20um%20teste!" target="_blank" rel="noopener" aria-label="WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-success text-white flex items-center justify-center shadow-strong hover:scale-110 transition-transform">
+  <svg viewBox="0 0 24 24" class="w-7 h-7" fill="currentColor"><path d="M20 3.5A11.5 11.5 0 002.4 17.2L1 23l5.9-1.5A11.5 11.5 0 1020 3.5zM12 21a9 9 0 01-4.6-1.3l-.3-.2-3.5.9.9-3.4-.2-.4A9 9 0 1112 21zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6 0-.3-.1-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5 0-.2 0-.3 0-.5 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3 0 1.4 1 2.7 1.2 2.9.1.2 2.1 3.2 5.2 4.5 1.8.7 2.5.8 3.4.6.6-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+const features = [
+  {i:'📺', t:'+10.000 Canais', d:'Canais nacionais e internacionais para toda a família.'},
+  {i:'🖥️', t:'HD / Full HD / 4K', d:'Alta definição sem travamentos — experiência cinematográfica.'},
+  {i:'📱', t:'Qualquer Dispositivo', d:'Smartphone, tablet, smart TV, notebook. Sua TV onde estiver.'},
+  {i:'⏰', t:'Sempre Disponível', d:'Acesse a qualquer hora. Conteúdo sob demanda sempre disponível.'},
+  {i:'💬', t:'Suporte Rápido', d:'Atendimento ágil via WhatsApp dedicado em minutos.'},
+  {i:'💳', t:'Pagamento Fácil', d:'Pix ou Cartão de Crédito. Simples, seguro, sem burocracia.'},
+];
+document.getElementById('features').innerHTML = features.map(f=>`
+  <div class="bg-white rounded-2xl p-7 border border-border shadow-soft hover:shadow-strong hover:-translate-y-1 transition-all">
+    <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center mb-5 shadow-soft text-2xl">${f.i}</div>
+    <h3 class="text-xl font-bold mb-2">${f.t}</h3>
+    <p class="text-muted-fg text-sm leading-relaxed">${f.d}</p>
+  </div>`).join('');
+
+const plans = [
+  {n:'Mensal',l:'Ideal para começar',p:'30',pe:'por mês',q:'SD / HD / Full HD',pop:false,hi:false,msg:'Gostaria de assinar o plano Mensal!'},
+  {n:'Trimestral',l:'Bom custo-benefício',p:'80',pe:'a cada 3 meses',q:'SD / HD / Full HD',pop:false,hi:false,msg:'Gostaria de assinar o plano Trimestral!'},
+  {n:'Semestral',l:'Favorito dos clientes',p:'180',pe:'a cada 6 meses',q:'SD / HD / Full HD / 4K',pop:true,hi:false,msg:'Gostaria de assinar o plano Semestral!'},
+  {n:'Anual PRO',l:'Máxima economia',p:'300',pe:'por ano',q:'SD / HD / Full HD / 4K',pop:false,hi:true,msg:'Gostaria de assinar o plano Anual!'},
+];
+document.getElementById('plans').innerHTML = plans.map(p=>{
+  const items = ['Canais, Filmes e Séries','Sem Travamentos',p.q,'Conteúdos digitais','1 tela simultânea'];
+  const wrap = p.pop ? 'gradient-primary text-white border-transparent shadow-strong scale-105' : 'bg-white border-border shadow-soft hover:shadow-strong';
+  const subClr = p.pop ? 'text-white/80' : 'text-muted-fg';
+  const btn = p.pop
+    ? 'bg-white text-brand hover:bg-highlight hover:text-ink'
+    : (p.hi ? 'bg-brand-2 text-white hover:opacity-90' : 'gradient-primary text-white hover:shadow-strong');
+  return `<div class="relative rounded-2xl p-7 border transition-all hover:-translate-y-1 ${wrap}">
+    ${p.pop ? `<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-highlight text-ink text-xs font-extrabold px-4 py-1.5 rounded-full shadow-soft uppercase tracking-wider">⭐ Mais Popular</div>` : ''}
+    ${p.hi ? `<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-2 text-white text-xs font-extrabold px-4 py-1.5 rounded-full shadow-soft uppercase tracking-wider">Economia Máxima</div>` : ''}
+    <p class="font-bold text-lg ${p.pop?'text-white':'text-brand'}">${p.n}</p>
+    <p class="text-xs font-semibold mb-5 ${subClr}">${p.l}</p>
+    <div class="mb-1"><span class="text-sm font-bold ${subClr}">R$</span><span class="text-5xl font-extrabold mx-1">${p.p}</span><span class="text-sm ${subClr}">,00</span></div>
+    <p class="text-xs mb-6 ${subClr}">${p.pe}</p>
+    <div class="h-px mb-6 ${p.pop?'bg-white/20':'bg-border'}"></div>
+    <ul class="space-y-3 mb-7 text-sm">${items.map(x=>`<li class="flex items-start gap-2"><span class="${p.pop?'text-white':'text-success'} mt-0.5">✓</span><span>${x}</span></li>`).join('')}</ul>
+    <a href="https://wa.me/5585920057750?text=${encodeURIComponent(p.msg)}" target="_blank" rel="noopener" class="block text-center py-3 rounded-full font-bold transition-all ${btn}">Quero Assinar</a>
+  </div>`;
+}).join('');
+
+const devices = ['📱 Smartphone','💻 Notebook','📺 Smart TV','📲 Tablet','🔥 Fire Stick','📦 Android Box','🎬 Projetor','📡 Roku TV'];
+document.getElementById('devices').innerHTML = devices.map(d=>`<div class="flex items-center gap-2 bg-white border border-border rounded-full px-5 py-3 shadow-soft hover:border-brand hover:text-brand transition-all font-semibold text-sm">${d}</div>`).join('');
+
+const testimonials = [
+  {n:'Carlos M.',c:'Fortaleza',t:'Melhor serviço de IPTV que já usei. Sinal estável o tempo todo, nunca travou em nenhum jogo ao vivo. Recomendo demais.'},
+  {n:'Rodrigo A.',c:'São Paulo',t:'Minha família toda usa. As crianças assistem desenho, eu assisto futebol, minha esposa vê novela. Tudo na mesma conta.'},
+  {n:'Fernanda S.',c:'Recife',t:'O suporte é diferente. Tive uma dúvida à meia-noite e responderam em menos de 10 minutos. Atendimento de verdade.'},
+  {n:'Juliana P.',c:'Brasília',t:'Já estava desconfiada, pedi o teste gratuito. Em um dia já tinha assinado o plano anual. Vale cada centavo.'},
+  {n:'Marcos R.',c:'Manaus',t:'Assino o plano semestral há mais de um ano. Nunca tive problemas sérios, e quando tive, o suporte resolveu na hora.'},
+  {n:'Ana L.',c:'Curitiba',t:'Cancelei minha TV a cabo e economiei muito. Tenho mais canais, mais séries e pago bem menos. Escolha certa.'},
+];
+document.getElementById('testimonials').innerHTML = testimonials.map(t=>`
+  <div class="bg-white border border-border rounded-2xl p-7 shadow-soft hover:shadow-strong transition-all">
+    <div class="text-highlight mb-4">★★★★★</div>
+    <p class="text-sm leading-relaxed mb-5 text-ink/85">"${t.t}"</p>
+    <div class="flex items-center gap-3 pt-4 border-t border-border">
+      <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center text-white font-bold text-sm">${t.n[0]}</div>
+      <div><div class="font-bold text-sm">${t.n}</div><div class="text-xs text-muted-fg">${t.c}</div></div>
+    </div>
+  </div>`).join('');
+
+const commitments = ['Sinal estável e sem interrupções','Equipe de suporte rápido','Conteúdo atualizado constantemente','Privacidade e segurança garantidas'];
+document.getElementById('commitments').innerHTML = commitments.map(c=>`
+  <li class="flex items-start gap-3">
+    <div class="w-6 h-6 rounded-full gradient-primary flex items-center justify-center flex-shrink-0 mt-0.5 text-white text-xs">✓</div>
+    <span class="font-semibold">${c}</span>
+  </li>`).join('');
+
+const badges = [
+  {i:'🛡️',t:'Seguro',d:'Privacidade garantida'},
+  {i:'⚡',t:'Rápido',d:'Sinal estável'},
+  {i:'🏆',t:'Premium',d:'Qualidade 4K'},
+  {i:'👥',t:'+5.000',d:'Clientes ativos'},
+];
+document.getElementById('badges').innerHTML = badges.map(b=>`
+  <div class="bg-white rounded-2xl p-6 border border-border shadow-soft text-center">
+    <div class="w-12 h-12 rounded-xl gradient-primary mx-auto flex items-center justify-center mb-3 text-2xl">${b.i}</div>
+    <div class="font-bold text-lg">${b.t}</div>
+    <div class="text-xs text-muted-fg">${b.d}</div>
+  </div>`).join('');
+
+const faqs = [
+  {q:'Como funciona o teste gratuito?',a:'Entre em contato pelo WhatsApp e liberamos um teste para você avaliar a qualidade do sinal, os canais disponíveis e a experiência antes de assinar qualquer plano.'},
+  {q:'Em quais dispositivos posso usar?',a:'Funciona em smartphones Android e iOS, notebooks, Smart TVs, tablets, Fire Stick, Android Box, Projetor, Roku TV e muito mais. Se o dispositivo tiver acesso à internet, provavelmente funciona.'},
+  {q:'O sinal trava ou tem instabilidade?',a:'Nosso serviço utiliza servidores de alta performance para garantir estabilidade. A qualidade da sua internet também influencia, mas trabalhamos para entregar o melhor sinal possível.'},
+  {q:'Quais formas de pagamento são aceitas?',a:'Aceitamos Pix e Cartão de Crédito. O processo é simples, seguro e sem burocracia. Após a confirmação do pagamento, o acesso é liberado rapidamente.'},
+  {q:'Tenho suporte se precisar de ajuda?',a:'Sim, nosso suporte está sempre à disposição via WhatsApp. Qualquer dúvida ou problema, é só chamar que a gente resolve rapidinho.'},
+];
+document.getElementById('faqs').innerHTML = faqs.map((f,i)=>`
+  <details ${i===0?'open':''} class="bg-white border border-border rounded-xl shadow-soft overflow-hidden">
+    <summary class="px-6 py-5 flex items-center justify-between font-bold hover:bg-muted/50 transition">
+      <span>${f.q}</span>
+      <span class="text-brand text-xl"><span class="ico-plus">+</span><span class="ico-minus">−</span></span>
+    </summary>
+    <div class="px-6 pb-5 text-muted-fg text-sm leading-relaxed">${f.a}</div>
+  </details>`).join('');
+</script>
+</body>
+</html>

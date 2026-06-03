@@ -85,9 +85,9 @@ nav{
   position:relative;overflow:hidden;
 }
 .hero-inner{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:60px;align-items:center;
-  max-width:1120px;margin:0 auto;width:100%;
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;
+  max-width:800px;margin:0 auto;width:100%;
 }
 /* orbs */
 .hero::before{
@@ -100,7 +100,7 @@ nav{
   background:radial-gradient(circle,rgba(255,45,168,.14),transparent 70%);
   bottom:-80px;left:-80px;pointer-events:none;
 }
-.hero-left{position:relative;z-index:1}
+.hero-left{position:relative;z-index:1;width:100%;text-align:center}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
   background:rgba(187,0,255,.1);border:1px solid rgba(187,0,255,.25);
@@ -120,8 +120,8 @@ nav{
   background:linear-gradient(135deg,var(--purple-vivid),var(--pink));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
-.hero-left p{font-size:.95rem;color:var(--muted);margin-bottom:36px;max-width:440px;line-height:1.75}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-left p{font-size:.95rem;color:var(--muted);margin:0 auto 36px;max-width:560px;line-height:1.75}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
 .btn-primary{
   background:linear-gradient(135deg,var(--purple-vivid),var(--pink));
   color:#fff;padding:15px 32px;border-radius:50px;text-decoration:none;
@@ -140,9 +140,9 @@ nav{
 }
 .btn-ghost:hover{background:var(--purple-vivid);color:#fff}
 .hero-stats{
-  display:flex;gap:32px;margin-top:48px;flex-wrap:wrap;
+  display:flex;gap:32px;margin-top:48px;flex-wrap:wrap;justify-content:center;
 }
-.stat-item{display:flex;flex-direction:column;gap:3px}
+.stat-item{display:flex;flex-direction:column;gap:3px;align-items:center}
 .stat-val{font-size:1.5rem;font-weight:700;color:var(--purple-dark)}
 .stat-lbl{font-size:.7rem;color:var(--muted);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
 
@@ -161,7 +161,7 @@ nav{
   animation:glow 3s ease-in-out infinite alternate;
 }
 @keyframes glow{from{opacity:.6;transform:scale(.95)}to{opacity:1;transform:scale(1.05)}}
-.hero-logo{width:260px;filter:drop-shadow(0 0 40px rgba(187,0,255,.5));position:relative;mix-blend-mode:screen;background:transparent}
+.hero-logo{width:260px;filter:drop-shadow(0 0 40px rgba(187,0,255,.5));position:relative;mix-blend-mode:multiply;background:transparent}
 /* floating feature pills */
 .hero-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:320px}
 .pill{
@@ -473,23 +473,22 @@ footer{background:var(--text);color:rgba(255,255,255,.65);padding:60px 5% 32px}
 </nav>
 
 <!-- HERO -->
-<section class="hero" style="justify-content:center;text-align:center;">
-  <div style="max-width:700px;margin:0 auto;width:100%;position:relative;z-index:1;">
-    <div class="hero-badge" style="justify-content:center;"><span class="badge-dot"></span>Ao vivo 24 horas</div>
-    <div class="hero-logo-wrap" style="margin:0 auto 24px;">
-      <img class="hero-logo" src="logo.png" alt="" onerror="this.style.display='none'">
-    </div>
-    <h1 style="font-size:clamp(2rem,5vw,3.8rem);font-weight:700;color:var(--text);line-height:1.1;letter-spacing:-.8px;margin-bottom:20px;white-space:nowrap;">O melhor Streaming <span style="background:linear-gradient(135deg,var(--purple-vivid),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">do Brasil</span></h1>
-    <p style="font-size:.95rem;color:var(--muted);margin:0 auto 36px;max-width:480px;line-height:1.75;">Assista canais ao vivo, filmes e séries em HD e 4K com estabilidade máxima, suporte dedicado e ativação imediata após o pagamento.</p>
-    <div class="hero-actions" style="justify-content:center;">
-      <a class="btn-primary" href="https://wa.me/5585920057750?text=Olá! Quero assinar o Hiper TV" target="_blank">▶ Assinar Agora</a>
-      <a class="btn-ghost" href="#planos">Ver Planos</a>
-    </div>
-    <div class="hero-stats" style="justify-content:center;margin-top:48px;">
-      <div class="stat-item"><span class="stat-val">+5.000</span><span class="stat-lbl">Canais</span></div>
-      <div class="stat-item"><span class="stat-val">SD, HD, Full HD e 4K</span><span class="stat-lbl">Qualidade</span></div>
-      <div class="stat-item"><span class="stat-val">Suporte</span><span class="stat-lbl">Especializado</span></div>
-      <div class="stat-item"><span class="stat-val">Imediato</span><span class="stat-lbl">Ativação</span></div>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="badge-dot"></span>Ao vivo 24 horas</div>
+      <h1>O melhor Streaming do Brasil</h1>
+      <p>Assista canais ao vivo, filmes e séries em HD e 4K com estabilidade máxima, suporte dedicado e ativação imediata após o pagamento.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://wa.me/5585920057750?text=Olá! Quero assinar o Hiper TV" target="_blank">▶ Assinar Agora</a>
+        <a class="btn-ghost" href="#planos">Ver Planos</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><span class="stat-val">+5.000</span><span class="stat-lbl">Canais</span></div>
+        <div class="stat-item"><span class="stat-val">SD, HD, Full HD e 4K</span><span class="stat-lbl">Qualidade</span></div>
+        <div class="stat-item"><span class="stat-val">Suporte</span><span class="stat-lbl">Especializado</span></div>
+        <div class="stat-item"><span class="stat-val">Imediato</span><span class="stat-lbl">Ativação</span></div>
+      </div>
     </div>
   </div>
 </section>

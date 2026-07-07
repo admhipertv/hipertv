@@ -46,11 +46,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1365968695435497');
+fbq('init', '1529634471997430');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1365968695435497&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1529634471997430&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
@@ -63,17 +63,17 @@ html{scroll-behavior:smooth}
 
 /* ── TOKENS ── */
 :root{
-  --bg:#F3E9FF;
+  --bg:#0B0514;
   --purple:#7B00CC;
   --purple-dark:#4A007A;
   --purple-vivid:#BB00FF;
   --magenta:#CC00A8;
   --pink:#FF2DA8;
-  --text:#1C0035;
-  --body:#3A1160;
-  --muted:#7A5090;
+  --text:#FFFFFF;
+  --body:#F0E6FA;
+  --muted:#C5B0DC;
   --white:#fff;
-  --card:#fff;
+  --card:#160D22;
   --shadow:0 4px 28px rgba(100,0,180,.13);
   --radius:20px;
 }
@@ -92,7 +92,7 @@ body{
 .label{
   display:inline-block;
   font-size:.7rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;
-  color:var(--purple-vivid);margin-bottom:12px;
+  color:#E9B3FF;margin-bottom:12px;
 }
 .title{
   font-size:clamp(1.9rem,4vw,3rem);font-weight:700;
@@ -100,7 +100,7 @@ body{
   margin-bottom:14px;
 }
 .title span{
-  background:linear-gradient(135deg,var(--purple-vivid),var(--pink));
+  background:linear-gradient(135deg,#E066FF,#FF80C0);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .subtitle{font-size:.92rem;color:var(--muted);max-width:460px;line-height:1.7}
@@ -110,16 +110,16 @@ nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
   display:flex;align-items:center;justify-content:space-between;
   padding:12px 5%;
-  background:rgba(243,233,255,.92);
+  background:rgba(11,5,20,.92);
   backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(187,0,255,.12);
+  border-bottom:1px solid rgba(187,0,255,.25);
 }
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .nav-brand img{height:40px;filter:drop-shadow(0 0 10px rgba(187,0,255,.5));background:transparent}
-.nav-brand-name{font-weight:700;font-size:1.1rem;color:var(--purple-dark);letter-spacing:.5px}
+.nav-brand-name{font-weight:700;font-size:1.1rem;color:#fff;letter-spacing:.5px}
 .nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{text-decoration:none;color:var(--body);font-size:.82rem;font-weight:600;letter-spacing:.3px;transition:color .2s}
-.nav-links a:hover{color:var(--purple-vivid)}
+.nav-links a:hover{color:#E9B3FF}
 .nav-cta{
   background:linear-gradient(135deg,var(--purple-vivid),var(--pink));
   color:#fff;padding:9px 20px;border-radius:50px;text-decoration:none;
@@ -144,20 +144,20 @@ nav{
 /* orbs */
 .hero::before{
   content:'';position:absolute;width:600px;height:600px;border-radius:50%;
-  background:radial-gradient(circle,rgba(187,0,255,.18),transparent 70%);
+  background:radial-gradient(circle,rgba(187,0,255,.22),transparent 70%);
   top:-120px;right:-100px;pointer-events:none;
 }
 .hero::after{
   content:'';position:absolute;width:400px;height:400px;border-radius:50%;
-  background:radial-gradient(circle,rgba(255,45,168,.14),transparent 70%);
+  background:radial-gradient(circle,rgba(255,45,168,.2),transparent 70%);
   bottom:-80px;left:-80px;pointer-events:none;
 }
 .hero-left{position:relative;z-index:1;width:100%;text-align:center}
 .hero-badge{
   display:inline-flex;align-items:center;gap:8px;
-  background:rgba(187,0,255,.1);border:1px solid rgba(187,0,255,.25);
+  background:rgba(187,0,255,.15);border:1px solid rgba(187,0,255,.35);
   border-radius:50px;padding:5px 16px;
-  font-size:.72rem;font-weight:700;color:var(--purple-dark);
+  font-size:.72rem;font-weight:700;color:var(--text);
   letter-spacing:1.2px;text-transform:uppercase;
   margin-bottom:24px;
 }
@@ -169,7 +169,7 @@ nav{
   margin-bottom:20px;
 }
 .hero-left h1 span{
-  background:linear-gradient(135deg,var(--purple-vivid),var(--pink));
+  background:linear-gradient(135deg,#E066FF,#FF80C0);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .hero-left p{font-size:.95rem;color:var(--muted);margin:0 auto 36px;max-width:560px;line-height:1.75}
@@ -185,7 +185,7 @@ nav{
 .btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(187,0,255,.55)}
 .btn-ghost{
   background:transparent;border:2px solid var(--purple-vivid);
-  color:var(--purple-dark);padding:13px 28px;border-radius:50px;
+  color:#fff;padding:13px 28px;border-radius:50px;
   text-decoration:none;font-weight:700;font-size:.88rem;
   transition:background .2s,color .2s;
   display:inline-flex;align-items:center;gap:8px;
@@ -195,7 +195,7 @@ nav{
   display:flex;gap:32px;margin-top:48px;flex-wrap:wrap;justify-content:center;
 }
 .stat-item{display:flex;flex-direction:column;gap:3px;align-items:center}
-.stat-val{font-size:1.5rem;font-weight:700;color:var(--purple-dark)}
+.stat-val{font-size:1.5rem;font-weight:700;color:#fff}
 .stat-lbl{font-size:.7rem;color:var(--muted);font-weight:600;letter-spacing:.5px;text-transform:uppercase}
 
 /* right side */
@@ -217,9 +217,9 @@ nav{
 /* floating feature pills */
 .hero-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:320px}
 .pill{
-  background:var(--white);border:1px solid rgba(187,0,255,.15);
+  background:var(--card);border:1px solid rgba(187,0,255,.25);
   border-radius:50px;padding:8px 16px;
-  font-size:.75rem;font-weight:700;color:var(--purple-dark);
+  font-size:.75rem;font-weight:700;color:var(--text);
   box-shadow:0 3px 12px rgba(100,0,180,.1);
   display:flex;align-items:center;gap:6px;
 }
@@ -241,7 +241,7 @@ nav{
 .feat{
   background:var(--card);border-radius:var(--radius);
   padding:32px 28px;
-  border:1px solid rgba(187,0,255,.1);
+  border:1px solid rgba(187,0,255,.2);
   box-shadow:var(--shadow);
   transition:transform .3s,box-shadow .3s;
   position:relative;overflow:hidden;
@@ -255,7 +255,7 @@ nav{
 .feat:hover::after{transform:scaleX(1)}
 .feat-icon{
   width:52px;height:52px;border-radius:14px;
-  background:linear-gradient(135deg,rgba(187,0,255,.1),rgba(255,45,168,.08));
+  background:linear-gradient(135deg,rgba(187,0,255,.18),rgba(255,45,168,.12));
   border:1px solid rgba(187,0,255,.15);
   display:flex;align-items:center;justify-content:center;
   font-size:1.5rem;margin-bottom:18px;
@@ -275,7 +275,7 @@ nav{
 }
 .devices-inner{max-width:1120px;margin:0 auto;text-align:center;position:relative}
 .devices-band h2{font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:8px}
-.devices-band p{color:rgba(255,255,255,.7);font-size:.85rem;margin-bottom:40px}
+.devices-band p{color:rgba(255,255,255,.92);font-size:.85rem;margin-bottom:40px}
 .dev-grid{display:flex;justify-content:center;flex-wrap:wrap;gap:16px}
 .dev{
   background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);
@@ -298,7 +298,7 @@ nav{
 .plan{
   background:var(--card);border-radius:var(--radius);
   padding:36px 26px;
-  border:2px solid rgba(187,0,255,.1);
+  border:2px solid rgba(187,0,255,.35);
   box-shadow:var(--shadow);
   transition:transform .3s,box-shadow .3s;
   position:relative;
@@ -317,7 +317,7 @@ nav{
   text-transform:uppercase;padding:5px 18px;border-radius:50px;
   white-space:nowrap;
 }
-.plan-period{font-size:.7rem;font-weight:700;color:var(--purple-vivid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
+.plan-period{font-size:.7rem;font-weight:700;color:#E9B3FF;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}
 .plan-price-row{display:flex;align-items:flex-start;gap:2px;margin-bottom:4px}
 .plan-curr{font-size:.85rem;font-weight:700;color:var(--text);margin-top:8px}
 .plan-amt{font-size:3rem;font-weight:700;color:var(--text);line-height:1}
@@ -325,7 +325,7 @@ nav{
 .plan-sep{height:1px;background:rgba(187,0,255,.1);margin-bottom:22px}
 .plan-list{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:30px}
 .plan-list li{display:flex;align-items:center;gap:9px;font-size:.8rem;color:var(--body)}
-.chk{color:var(--purple-vivid);font-size:.9rem;flex-shrink:0}
+.chk{color:#E9B3FF;font-size:.9rem;flex-shrink:0}
 .plan-btn{
   display:block;text-align:center;padding:13px;border-radius:50px;
   font-weight:700;font-size:.84rem;text-decoration:none;
@@ -333,8 +333,8 @@ nav{
   border:none;cursor:pointer;width:100%;
 }
 .plan:not(.hot) .plan-btn{
-  background:rgba(187,0,255,.08);color:var(--purple-dark);
-  border:2px solid rgba(187,0,255,.2);
+  background:rgba(187,0,255,.15);color:var(--text);
+  border:2px solid rgba(187,0,255,.35);
 }
 .plan:not(.hot) .plan-btn:hover{background:var(--purple-vivid);color:#fff;border-color:var(--purple-vivid)}
 .plan.hot .plan-btn{
@@ -351,7 +351,7 @@ nav{
 .how-step{display:flex;flex-direction:column;gap:14px;position:relative}
 .how-step:not(:last-child)::after{
   content:'→';position:absolute;top:15px;right:-18px;
-  font-size:1.2rem;color:rgba(187,0,255,.3);
+  font-size:1.2rem;color:#E9B3FF;
 }
 .step-num{
   width:46px;height:46px;border-radius:50%;
@@ -365,10 +365,10 @@ nav{
 
 /* ── PAYMENTS ── */
 .pay-section{
-  background:linear-gradient(135deg,rgba(187,0,255,.06),rgba(255,45,168,.04));
+  background:linear-gradient(135deg,rgba(187,0,255,.14),rgba(255,45,168,.1));
   border-radius:24px;
   padding:48px;margin:0 auto;max-width:1120px;
-  border:1px solid rgba(187,0,255,.1);
+  border:1px solid rgba(187,0,255,.2);
   display:flex;align-items:center;justify-content:space-between;
   flex-wrap:wrap;gap:32px;
 }
@@ -376,9 +376,9 @@ nav{
 .pay-left p{font-size:.85rem;color:var(--muted)}
 .pay-methods{display:flex;gap:12px;flex-wrap:wrap}
 .pay-chip{
-  background:#fff;border:1px solid rgba(187,0,255,.15);
+  background:var(--card);border:1px solid rgba(187,0,255,.25);
   border-radius:50px;padding:8px 18px;
-  font-size:.8rem;font-weight:700;color:var(--purple-dark);
+  font-size:.8rem;font-weight:700;color:var(--text);
   box-shadow:0 2px 10px rgba(100,0,180,.08);
   display:flex;align-items:center;gap:7px;
 }
@@ -395,7 +395,7 @@ nav{
              radial-gradient(circle at 85% 50%,rgba(255,255,255,.05),transparent 55%);
 }
 .cta-band h2{font-size:clamp(1.7rem,4vw,2.8rem);font-weight:700;color:#fff;margin-bottom:12px;position:relative;letter-spacing:-.3px}
-.cta-band p{color:rgba(255,255,255,.8);font-size:.92rem;margin-bottom:36px;position:relative}
+.cta-band p{color:rgba(255,255,255,.95);font-size:.92rem;margin-bottom:36px;position:relative}
 .btn-white{
   background:#fff;color:var(--purple-dark);
   padding:16px 40px;border-radius:50px;
@@ -408,35 +408,35 @@ nav{
 
 /* ── FAQ ── */
 .faq-wrap{max-width:720px;margin:0 auto}
-.faq-item{border-bottom:1px solid rgba(187,0,255,.12);padding:22px 0;cursor:pointer}
+.faq-item{border-bottom:1px solid rgba(187,0,255,.25);padding:22px 0;cursor:pointer}
 .faq-q{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   font-size:.9rem;font-weight:700;color:var(--text);
 }
 .faq-ico{
   width:26px;height:26px;border-radius:50%;flex-shrink:0;
-  background:rgba(187,0,255,.1);border:1px solid rgba(187,0,255,.2);
+  background:rgba(187,0,255,.15);border:1px solid rgba(187,0,255,.3);
   display:flex;align-items:center;justify-content:center;
-  font-size:.65rem;color:var(--purple-vivid);transition:transform .3s,background .3s;
+  font-size:.65rem;color:#E9B3FF;transition:transform .3s,background .3s;
 }
 .faq-item.open .faq-ico{transform:rotate(180deg);background:var(--purple-vivid);color:#fff}
 .faq-a{font-size:.82rem;color:var(--muted);line-height:1.75;max-height:0;overflow:hidden;transition:max-height .4s,padding .3s}
 .faq-item.open .faq-a{max-height:220px;padding-top:12px}
 
 /* ── FOOTER ── */
-footer{background:var(--text);color:rgba(255,255,255,.65);padding:60px 5% 32px}
+footer{background:#0B0514;color:rgba(255,255,255,.8);padding:60px 5% 32px}
 .footer-grid{
   display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;
   gap:40px;margin-bottom:48px;
 }
 .ft-brand img{height:50px;filter:drop-shadow(0 0 12px rgba(187,0,255,.5));margin-bottom:16px;display:block;background:transparent}
-.ft-brand p{font-size:.8rem;line-height:1.7;max-width:220px}
+.ft-brand p{font-size:.8rem;line-height:1.7;max-width:220px;color:rgba(255,255,255,.85)}
 .ft-col h4{color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.8px;text-transform:uppercase;margin-bottom:18px}
 .ft-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
-.ft-col a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.8rem;transition:color .2s}
+.ft-col a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.8rem;transition:color .2s}
 .ft-col a:hover{color:var(--purple-vivid)}
 .footer-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.77rem}
-.footer-bottom a{color:rgba(255,255,255,.45);text-decoration:none}
+.footer-bottom a{color:rgba(255,255,255,.65);text-decoration:none}
 .footer-bottom a:hover{color:var(--purple-vivid)}
 
 /* ── WHATSAPP FLOAT ── */
@@ -490,10 +490,10 @@ footer{background:var(--text);color:rgba(255,255,255,.65);padding:60px 5% 32px}
 .rev-benefit{display:flex;align-items:flex-start;gap:14px}
 .rev-ico{font-size:1.4rem;flex-shrink:0;margin-top:2px}
 .rev-benefit strong{display:block;font-size:.88rem;color:#fff;margin-bottom:2px}
-.rev-benefit p{font-size:.78rem;color:rgba(255,255,255,.65);margin:0}
+.rev-benefit p{font-size:.78rem;color:rgba(255,255,255,.8);margin:0}
 .revenda-right{position:relative;z-index:1}
 .rev-card{
-  background:rgba(255,255,255,.95);border-radius:20px;
+  background:var(--card);border-radius:20px;
   padding:36px 30px;
   box-shadow:0 12px 48px rgba(0,0,0,.25);
 }
@@ -507,7 +507,7 @@ footer{background:var(--text);color:rgba(255,255,255,.65);padding:60px 5% 32px}
 
 /* ── MELHORIAS ── */
 body{font-family:'Inter','Segoe UI',Verdana,sans-serif;-webkit-font-smoothing:antialiased}
-:root{--muted:#5A3580}
+:root{--muted:#C5B0DC}
 a:focus-visible,button:focus-visible,.nav-cta:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:8px}
 img{max-width:100%;height:auto}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
@@ -527,7 +527,7 @@ img{max-width:100%;height:auto}
     <li><a href="#planos">Planos</a></li>
     <li><a href="#como-funciona">Como Funciona</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#revenda" style="color:var(--purple-vivid);font-weight:700">Revenda</a></li>
+    <li><a href="#revenda" style="color:#E9B3FF;font-weight:700">Revenda</a></li>
   </ul>
   <a class="nav-cta" href="https://wa.me/5585920057750" target="_blank">💬 Falar no WhatsApp</a>
 </nav>
@@ -603,11 +603,11 @@ img{max-width:100%;height:auto}
     <p>Um servidor. Todos os aparelhos que você já usa no dia a dia.</p>
     <div class="dev-grid">
       <div class="dev"><span>📺</span>Smart TV</div>
-      <div class="dev"><span>📱</span>Aparelhos Android</div>
+      <div class="dev"><span>📱</span>Android</div>
       <div class="dev"><span>💻</span>Computador</div>
       <div class="dev"><span>📦</span>TV Box</div>
       <div class="dev"><span>🔥</span>Firestick</div>
-      <div class="dev"><span>🍎</span>Aparelhos iOS</div>
+      <div class="dev"><span>🍎</span>iOS</div>
       <div class="dev"><span>📽️</span>Projetor</div>
       <div class="dev"><span>📡</span>Roku TV</div>
     </div>
@@ -634,12 +634,13 @@ img{max-width:100%;height:auto}
         <div class="plan-name">Plano Mensal</div>
         <div class="plan-sep"></div>
         <ul class="plan-list">
-          <li><span class="chk">✦</span>Muitos Canais ao vivo</li>
-          <li><span class="chk">✦</span>SD, HD, Full HD e 4K</li>
-          <li><span class="chk">✦</span>Filmes e Séries Atualizadas</li>
-		  <li><span class="chk">✦</span>Contúdo Adulto (opcional)</li>
-          <li><span class="chk">✦</span>Sem fidelidade</li>
-          <li><span class="chk">✦</span>Suporte WhatsApp</li>
+         <li><span class="chk">✅</span>1 Acesso Simultâneo</li>
+         <li><span class="chk">✅</span>Muitos Canais</li>
+          <li><span class="chk">✅</span>SD, HD, Full HD e 4K</li>
+          <li><span class="chk">✅</span>Filmes e Séries Atualizadas</li>
+		  <li><span class="chk">✅</span>Contúdo Adulto (opcional)</li>
+          <li><span class="chk">✅</span>Sem fidelidade</li>
+          <li><span class="chk">✅</span>Suporte WhatsApp</li>
         </ul>
         <a class="plan-btn" href="https://wa.me/5585920057750?text=Olá! Quero assinar o Plano Mensal R%2430" target="_blank">Assinar Agora</a>
       </div>
@@ -655,12 +656,13 @@ img{max-width:100%;height:auto}
         <div class="plan-name">3 meses · melhor custo-benefício</div>
         <div class="plan-sep"></div>
         <ul class="plan-list">
-          <li><span class="chk">✦</span>Muitos Canais ao vivo</li>
-          <li><span class="chk">✦</span>SD, HD, Full HD e 4K</li>
-          <li><span class="chk">✦</span>Filmes e Séries Atualizadas</li>
-		  <li><span class="chk">✦</span>Contúdo Adulto (opcional)</li>
-          <li><span class="chk">✦</span>Sem fidelidade</li>
-          <li><span class="chk">✦</span>Suporte WhatsApp</li>
+          <li><span class="chk">✅</span>1 Acesso Simultâneo</li>
+         <li><span class="chk">✅</span>Muitos Canais</li>
+          <li><span class="chk">✅</span>SD, HD, Full HD e 4K</li>
+          <li><span class="chk">✅</span>Filmes e Séries Atualizadas</li>
+		  <li><span class="chk">✅</span>Contúdo Adulto (opcional)</li>
+          <li><span class="chk">✅</span>Sem fidelidade</li>
+          <li><span class="chk">✅</span>Suporte WhatsApp</li>
         </ul>
         <a class="plan-btn" href="https://wa.me/5585920057750?text=Olá! Quero assinar o Plano Trimestral R%2480" target="_blank">Assinar Agora</a>
       </div>
@@ -675,12 +677,13 @@ img{max-width:100%;height:auto}
         <div class="plan-name">6 meses · economia garantida</div>
         <div class="plan-sep"></div>
         <ul class="plan-list">
-          <li><span class="chk">✦</span>Muitos Canais ao vivo</li>
-          <li><span class="chk">✦</span>SD, HD, Full HD e 4K</li>
-          <li><span class="chk">✦</span>Filmes e Séries Atualizadas</li>
-		  <li><span class="chk">✦</span>Contúdo Adulto (opcional)</li>
-          <li><span class="chk">✦</span>Sem fidelidade</li>
-          <li><span class="chk">✦</span>Suporte WhatsApp</li>
+         <li><span class="chk">✅</span>1 Acesso Simultâneo</li>
+         <li><span class="chk">✅</span>Muitos Canais</li>
+          <li><span class="chk">✅</span>SD, HD, Full HD e 4K</li>
+          <li><span class="chk">✅</span>Filmes e Séries Atualizadas</li>
+		  <li><span class="chk">✅</span>Contúdo Adulto (opcional)</li>
+          <li><span class="chk">✅</span>Sem fidelidade</li>
+          <li><span class="chk">✅</span>Suporte WhatsApp</li>
         </ul>
         <a class="plan-btn" href="https://wa.me/5585920057750?text=Olá! Quero assinar o Plano Semestral R%24180" target="_blank">Assinar Agora</a>
       </div>
@@ -696,12 +699,13 @@ img{max-width:100%;height:auto}
         <div class="plan-name">12 meses · máxima economia</div>
         <div class="plan-sep"></div>
         <ul class="plan-list">
-         <li><span class="chk">✦</span>Muitos Canais ao vivo</li>
-          <li><span class="chk">✦</span>SD, HD, Full HD e 4K</li>
-          <li><span class="chk">✦</span>Filmes e Séries Atualizadas</li>
-		  <li><span class="chk">✦</span>Contúdo Adulto (opcional)</li>
-          <li><span class="chk">✦</span>Sem fidelidade</li>
-          <li><span class="chk">✦</span>Suporte WhatsApp</li>
+		<li><span class="chk">✅</span>1 Acesso Simultâneo</li>
+         <li><span class="chk">✅</span>Muitos Canais</li>
+          <li><span class="chk">✅</span>SD, HD, Full HD e 4K</li>
+          <li><span class="chk">✅</span>Filmes e Séries Atualizadas</li>
+		  <li><span class="chk">✅</span>Contúdo Adulto (opcional)</li>
+          <li><span class="chk">✅</span>Sem fidelidade</li>
+          <li><span class="chk">✅</span>Suporte WhatsApp</li>
         </ul>
         <a class="plan-btn" href="https://wa.me/5585920057750?text=Olá! Quero assinar o Plano Anual PRO R%24300" target="_blank">Assinar Agora</a>
       </div>
@@ -765,7 +769,7 @@ img{max-width:100%;height:auto}
       <div class="revenda-left">
         <span class="label">Oportunidade de Negócio</span>
         <h2 class="title" style="color:#fff">Seja um<br><span style="background:linear-gradient(135deg,#FFD700,#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Revendedor</span></h2>
-        <p style="color:rgba(255,255,255,.82);font-size:.9rem;line-height:1.75;max-width:420px;margin-bottom:32px">Tenha seu próprio negócio de IPTV com a infraestrutura premium do Hiper TV. Margens atrativas, painel de controle exclusivo e suporte completo para você crescer.</p>
+        <p style="color:rgba(255,255,255,.95);font-size:.9rem;line-height:1.75;max-width:420px;margin-bottom:32px">Tenha seu próprio negócio de IPTV com a infraestrutura premium do Hiper TV. Margens atrativas, painel de controle exclusivo e suporte completo para você crescer.</p>
         <div class="revenda-benefits">
           <div class="rev-benefit"><span class="rev-ico">💰</span><div><strong>Margens Atrativas</strong><p>Lucro competitivo em cada plano vendido</p></div></div>
           <div class="rev-benefit"><span class="rev-ico">🖥️</span><div><strong>Painel Exclusivo</strong><p>Gerencie seus clientes com facilidade</p></div></div>
@@ -813,7 +817,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="faq-item">
       <div class="faq-q">Quais formas de pagamento são aceitas? <span class="faq-ico">▼</span></div>
-      <div class="faq-a">Aceitamos Pix com ativação imediata, cartão de crédito, cartão de débito e boleto bancário. O acesso é liberado automaticamente após a confirmação do pagamento.</div>
+      <div class="faq-a">Aceitamos Pix com ativação imediata, cartão de crédito, e boleto bancário. O acesso é liberado automaticamente após a confirmação do pagamento.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Tem fidelidade ou multa por cancelamento? <span class="faq-ico">▼</span></div>
@@ -825,7 +829,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="faq-item">
       <div class="faq-q">Em quais dispositivos funciona? <span class="faq-ico">▼</span></div>
-      <div class="faq-a">Funciona em Smart TV, celular Android e iPhone, computador (Windows e Mac), TV Box, Amazon Firestick e qualquer dispositivo compatível com m3u ou Xtream Codes.</div>
+      <div class="faq-a">Funciona em Smart TV, celular Android e iOS, computador (Windows e Mac), TV Box, Amazon Firestick, Roku TV e qualquer dispositivo compatível com m3u ou Xtream Codes.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q">Como é feita a instalação? <span class="faq-ico">▼</span></div>
